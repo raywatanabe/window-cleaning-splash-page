@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* typography */
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 5px black;
+}
+
+h2 {
+    color:#34b1eb;
+    font-size: 6vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 1.125rem;
+    margin: 2em 0 2em;
+}
+
+.subtext {
+    font-weight: 700;
+    text-shadow: 1px 1px 5px black;
+}
+
+.top-text {
+    font-size: 0.875rem;
+    font-weight: 900;
+    text-shadow: 1px 1px 5px black;
+    padding-top: 0.25em;
+    border-top: 5px solid;
+    order: -1;
+    margin: 0 auto;
+}
+
+/* FLEX CONTAINERS */
+
+.intro,
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+}
+
+/* INTRO */
+
+.intro {
+    justify-content: space-between;
+    min-height: 250px;
+    text-align: center;
+    color: #fff;
+    background: #34b1eb url("images/windows.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 1.5em;
+}
+
+/* MAIN */
+
+main {
+    align-items: center;
+    padding: 2.5em;
+}
+
+main p,
+form {
+    max-width: 450px;
+}
+
+/* FORM */
+
+input,
+button {
+    font-family: inherit;
+    width: 100%; 
+    border-radius: 5px;   
+}
+
+input {
+    padding: 0.5em;
+    margin-bottom: 0.75em;
+    border: 2px solid #d1d5db;
+}
+
+input:focus {
+    outline: none;
+    border-color: #34b1eb;
+    background-color: #e6e8ec;
+}
+
+button {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 1em 0;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+/* media queries */
+
+@media (min-width: 576px) {
+    body {
+        display: flex;
+    }
+
+    .intro,
+    main {
+        width: 50%;
+    }
+
+    .intro {
+        min-height: 100vh;
+    }
+
+    main {
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+}
